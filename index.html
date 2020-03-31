@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <header>
+        <div class="header-top">
+            <div class="container-fluid ml-4">
+                <div class="d-none d-xl-block mr-5">
+                   <span>address: Crown St, Brooklyn, NY 11225, USA</span>
+                   <span class="float-right mr-5">bridge@qodeinteractive.com</span>
+                   <span class="float-right mr-5">call us today: 963 225 412</span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid ml-4 mt-3 mb-3">
+            <img  src="./src/img/logo-2.png" alt="#">
+            <div class="menu-bar float-right font-weight-bold">
+                <div class="home d-xl-inline d-sm-block  mr-5">
+                    <a class="text-decoration-none text-dark " href="#">Home</a>
+                </div>
+                <div class="about d-xl-inline d-sm-block  mr-5">
+                    <a class="text-decoration-none text-dark" href="#">about</a>
+                </div>
+                <div class="services d-xl-inline d-sm-block  mr-5">
+                    <a class="text-decoration-none text-dark" href="#">services</a>
+                </div>
+                <div class="team d-xl-inline d-sm-block  mr-5">
+                    <a class="text-decoration-none text-dark" href="#">team</a>
+                </div>
+                <div class="team d-xl-inline d-sm-block mr-5">
+                    <a class="text-decoration-none text-dark" href="#">blog</a>
+                </div>
+                <div class="team d-xl-inline d-sm-block mr-5">
+                    <a class="text-decoration-none text-success" href="#">contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="Contact"> 
+        <img style="width: 100%;" src="./src/img/contact-title.jpg" alt="">
+    </div>
+    <div class="container-fluid map row mt-5 mb-5">
+        <div class="col-5 m-5 d-block">
+            <img class="d-lg-block" class="width: 50px;" src="./src/img/map.png" alt="">
+        </div>
+        <div class="col-3 mt-5 d-lg-block">
+            <h3 class="font-weight-bold">Brooklyn</h3>
+            <p class="font-weight-light">330 Crown St, Brooklyn,<br>
+            NY 11225, USA</p>
+            <p class="font-weight-light d-inline">Phone : </p>
+            <span><a class="text-decoration-none text-dark" href="#">369 851 236</a></span>
+            <p>fax: 369 741 584</p>
+            <p class="font-weight-light d-inline">Email : </p>
+            <span><a class="text-decoration-none text-dark" href="#">midtown@email.com</a></span>
+        </div>
+        <div class="col-3 mt-5 d-lg-block">
+            <h3 class="font-weight-bold">Bronx</h3>
+            <p class="font-weight-light">330 Crown St, Brooklyn,<br>
+            NY 11225, USA</p>
+            <p class="font-weight-light d-inline">Phone : </p>
+            <span><a class="text-decoration-none text-dark" href="#">369 851 236</a></span>
+            <p>fax: 369 741 584</p>
+            <p class="font-weight-light d-inline">Email : </p>
+            <span><a class="text-decoration-none text-dark" href="#">midtown@email.com</a></span>
+        </div>
+    </div>
+    <div style="background-color: #CCFFFF; height: 700px ;">
+        <div class="text-center" style="padding-top :100px;">
+            <h1  class="font-weight-bold">GET IN TOUCH</h1>
+            <p>Praesent eu tincidunt purus, sed convallis sem. Donec pharetra quam <br> malesuad. Forbiden bist elen strenmo.</p>
+        </div>
+        <form class="text-center form-group form-row mt-5" name="myForm" onsubmit="return validateForm()" method="GET">
+            <div class="col-3"></div>
+            <input style="border-radius: 15px; background-color: #F5F5F5; height: 55px;" class="form-control col-3 mb-4 "  type="text" name="fname" placeholder="First Name">
+            <input style="border-radius: 15px; background-color: #F5F5F5; height: 55px;" class="form-control col-3 mb-4 type="text" name="lname" placeholder="Last Name">
+            <div class="col-3"></div>
+            <br>
+            <div class="col-3"></div>
+            <input style="border-radius: 15px; background-color: #F5F5F5; height: 55px;" class="form-control col-3 mb-4" type="text" name="email" placeholder="Email">
+            <input style="border-radius: 15px; background-color: #F5F5F5; height: 55px;" class="form-control col-3 mb-4" type="text" name="phone" placeholder="Phone">
+            <div class="col-3"></div>
+            <br>
+            <div class="col-3"></div>
+            <textarea style="border-radius: 15px; background-color: #F5F5F5; " class="form-control col-6 mb-4" id="exampleFormControlTextarea1" rows="8" placeholder="Message..."></textarea>
+            <div class="col-3"></div>
+            <br>
+            <div class="col-5 ml-4"></div>
+            <input style="border-radius: 15px;" class="col-1 ml-5 btn btn-success" type="submit" value="Submit"></input>
+            <div class="col-6"></div>
+          </form>
+          
+        <script>
+            function validateForm() {
+            const Firstname = document.forms["myForm"]["fname"].value;
+            const Lastname = document.forms["myForm"]["lname"].value;
+            const Email = document.forms["myForm"]["email"].value;
+            const Phone = document.forms["myForm"]["phone"].value;
+            const Message = document.forms["myForm"]["exampleFormControlTextarea1"].value;
+            if (Firstname == "") {
+                alert("ONE OR MORE FIELDS HAVE AN ERROR. PLEASE CHECK AND TRY AGAIN");
+                return false;
+            }
+            if (Lastname == "") {
+                alert("ONE OR MORE FIELDS HAVE AN ERROR. PLEASE CHECK AND TRY AGAIN");
+                return false;
+            }
+            if (Email == "") {
+                alert("ONE OR MORE FIELDS HAVE AN ERROR. PLEASE CHECK AND TRY AGAIN");
+                return false;
+            }
+            if (Phone == "") {
+                alert("ONE OR MORE FIELDS HAVE AN ERROR. PLEASE CHECK AND TRY AGAIN");
+                return false;
+            }
+            if (Message == "") {
+                alert("ONE OR MORE FIELDS HAVE AN ERROR. PLEASE CHECK AND TRY AGAIN");
+                return false;
+            }
+            alert("THANK YOU FOR YOUR MESSAGE. IT HAS BEEN SENT.")
+            return true;
+}
+        </script>
+    </div>
+    <footer class="row ">
+        <div class="col-3 mt-5 ml-5 ">
+            <h3 class="font-weight-bold">Brooklyn</h3>
+            <p >330 Crown St, Brooklyn,<br>
+            NY 11225, USA</p>
+            <p class="d-inline">Phone : </p>
+            <span><a class="text-decoration-none text-dark" href="#">369 851 236</a></span>
+            <p>fax: 369 741 584</p>
+            <p class="d-inline">Email : </p>
+            <span><a class="text-decoration-none text-dark" href="#">midtown@email.com</a></span>
+        </div>
+        <div class="col-3 mt-5 ">
+            <h3 class="font-weight-bold">Bronx</h3>
+            <p>2000 E Tremont,The Bronx,
+                NY, 10462, USA<br>
+            NY 11225, USA</p>
+            <p class="d-inline">Phone : </p>
+            <span><a class="text-decoration-none text-dark" href="#">369 851 236</a></span>
+            <p>fax: 369 741 584</p>
+            <p class="d-inline">Email : </p>
+            <span><a class="text-decoration-none text-dark" href="#">midtown@email.com</a></span>
+        </div>
+        <div class="col-2 mt-5 ">
+            <h3 class="font-weight-bold">Our services</h3>
+            <p><a class="text-decoration-none text-dark" href="#">Psychological services</a></p>
+            <p><a class="text-decoration-none text-dark pt-5" href="#">Educational services</a></p>
+            <p><a class="text-decoration-none text-dark" href="#">Physical therapy</a></p>
+            <p><a class="text-decoration-none text-dark" href="#">Speech-language therapy</a></p>
+            <p><a class="text-decoration-none text-dark" href="#">Behavior</a></p>
+        </div>
+        <div class="col-2 mt-5 ">
+            <h3 class="font-weight-bold">Follow Us</h3>
+            
+        </div>
+        <div class="copyright col-12">
+            <p class="text-center">© Copyright Qode Interactive.</p>
+        </div>
+    </footer>
+</body>
+</html>
